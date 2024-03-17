@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Languages? 😎</title>
+
+
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Lucida Sans;
+        margin: 15px;
+      }
+
+
+      h2 {
+        margin: 12px;
+      }
+
+
+      p {
+        font-family: Lucida Sans;
+        text-align: center;
+        text-decoration: underline;
+      }
+
+
+      ul {
+        padding: 0;
+        list-style: none;
+        line-height: 2;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bolder;
+      }
+
+
+      img {
+        max-width: 60%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+
+
+      button {
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        background: #018498;
+        color: white;
+        border: #018498;
+        font-size: 15px;
+      }
+
+
+      button:hover {
+        transition: all 150ms ease-in-out;
+      }
+
+
+      h3 {
+        text-align: center;
+        font-family: Lucida Sans;
+        font-size: 15px;
+      }
+
+
+      .page {
+        padding: 20px auto;
+        margin: 0 300px auto;
+        background: radial-gradient(
+          circle at 0.9% 49.5%,
+          rgb(0, 250, 255) 0%,
+          rgb(2, 255, 187) 100.2%
+        );
+        border-radius: 50px;
+      }
+
+
+      .language-links {
+        display: block;
+        text-align: center;
+      }
+
+
+      .French-link {
+        text-decoration: none;
+      }
+
+
+      .French-link:hover {
+        text-decoration: underline;
+      }
+
+
+      .Spanish-link {
+        text-decoration: none;
+      }
+
+
+      .Spanish-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <br />
+      <h1>🔹 I 💖 learning languages! 🔹</h1>
+      <marquee width="100%" direction="left"
+        ><h2>
+          💬🌍💬🌍💬🌍💬🌍💬🌍💬🌍💬🌍💬🌍💬🌍💬🌍💬🌍💬🌍💬🌍💬
+        </h2></marquee
+      >
+      <hr />
+      <p>
+        <strong>THE BENEFITS:</strong>
+      </p>
+      <ul>
+        <li>🔹It's cool to be bilingual 😎</li>
+        <li>🔹It will boost your memory 🚀</li>
+        <li>🔹You can connect with different cultures more easily!</li>
+      </ul>
+      <hr />
+      <span class="language-links">
+        <a
+          href="https://www.youtube.com/c/PieceofFrench"
+          target="_blank"
+          class="French-link"
+          >Click here to learn French 🥐
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCfG2VhlQgy5bHGmkpeKcjVA"
+          target="_blank"
+          class="Spanish-link"
+        >
+          Click here to learn Spanish 😍</a
+        >
+      </span>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/042/951/original/languages_hello.png?1659825858"
+        alt="hello in different languages"
+      />
+      <br />
+      <br />
+      <button>Have you done your Duolingo lesson?</button>
+      <br />
+      <h3>🔹Coded by Aafreen Zainab Kashif 🔹</h3>
+      <br />
+    </div>
+    <script>
+      function doneLesson() {
+        let name = prompt("What is your name?");
+        let lesson = prompt("Have you done your Duolingo lesson? yes / no");
+
+
+        lesson = lesson.toLowerCase().trim();
+
+
+        if (lesson === "yes") {
+          alert("You're on your way to learning a new language, " + name + "!");
+        } else {
+          alert("✨ Go save your streak, " + name + "! ✨");
+        }
+      }
+
+
+      let learnLanguage = document.querySelector("button");
+
+
+      learnLanguage.addEventListener("click", doneLesson);
+    </script>
+  </body>
+</html>
